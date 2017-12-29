@@ -49,6 +49,10 @@
   <ItemGroup>
     <Compile Include="EjemploContext.cs" />
     <Compile Include="EjemploContextFactory.cs" />
+    <Compile Include="Migrations\201712291658166_initial.cs" />
+    <Compile Include="Migrations\201712291658166_initial.Designer.cs">
+      <DependentUpon>201712291658166_initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +60,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712291658166_initial.resx">
+      <DependentUpon>201712291658166_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
