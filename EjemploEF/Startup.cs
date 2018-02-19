@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EjemploEF.Data;
+using EjemploEF.Bussines;
 
 namespace EjemploEF.Web
 {
@@ -24,6 +25,7 @@ namespace EjemploEF.Web
         {
             services.AddMvc();
             services.AddScoped<EjemploContext>(_ => new EjemploContext(Configuration.GetConnectionString("Example")));
+            services.AddTransient<PersonaService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

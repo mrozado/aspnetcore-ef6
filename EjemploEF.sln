@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploEF.Web", "EjemploEF\EjemploEF.Web.csproj", "{C6E9D8B7-AF73-45A4-962A-E62C7FAF2F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EjemploEF.Web", "EjemploEF\EjemploEF.Web.csproj", "{C6E9D8B7-AF73-45A4-962A-E62C7FAF2F89}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploEF.Data", "EjemploEF.Data\EjemploEF.Data.csproj", "{74E9E4E0-C6A4-4548-8C2F-E645C1CADF3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjemploEF.Bussines", "EjemploEF.Bussines\EjemploEF.Bussines.csproj", "{38217CE6-DF85-4864-A54C-5626442F6D69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetFramework", "NetFramework", "{9E3F17FF-FC12-41AC-AA23-1C9CB0164D08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{82ACE024-9050-456D-A6FB-997B5BF07DCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +27,18 @@ Global
 		{74E9E4E0-C6A4-4548-8C2F-E645C1CADF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E9E4E0-C6A4-4548-8C2F-E645C1CADF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E9E4E0-C6A4-4548-8C2F-E645C1CADF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38217CE6-DF85-4864-A54C-5626442F6D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38217CE6-DF85-4864-A54C-5626442F6D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38217CE6-DF85-4864-A54C-5626442F6D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38217CE6-DF85-4864-A54C-5626442F6D69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6E9D8B7-AF73-45A4-962A-E62C7FAF2F89} = {9E3F17FF-FC12-41AC-AA23-1C9CB0164D08}
+		{74E9E4E0-C6A4-4548-8C2F-E645C1CADF3C} = {9E3F17FF-FC12-41AC-AA23-1C9CB0164D08}
+		{38217CE6-DF85-4864-A54C-5626442F6D69} = {9E3F17FF-FC12-41AC-AA23-1C9CB0164D08}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7876F896-BF1F-4CA0-A734-C8587A6E2983}

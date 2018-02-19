@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace EjemploEF.Data
 {
-    public class Persona
+    public class Persona : BaseModel
     {
-        public int ID { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
     }
