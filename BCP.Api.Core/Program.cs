@@ -19,6 +19,7 @@ namespace BCP.Api.Core
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureLogging(builder => builder.AddFile())
                 .UseStartup<Startup>()
                 .Build();
     }
